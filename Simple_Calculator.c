@@ -70,6 +70,7 @@ int main()
                     else
                     {
                         printf("Error! Still division by zero. Exiting...\n");
+                        printf("\n-------------------THANK YOU XD----------------------");
                         return 1; // Exit the program with an error code
                     }
                 }
