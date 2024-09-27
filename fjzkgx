@@ -1,0 +1,82 @@
+#include <stdio.h>
+#include <math.h>
+
+// Function declarations
+void circle();
+void triangle();
+void square();
+void rectangle();
+
+int main() {
+    int choice;
+
+    // Option 1: Using switch statement
+    printf("Choose the shape:\n");
+    printf("1. Circle\n2. Triangle\n3. Square\n4. Rectangle\n");
+    printf("Enter your choice (1-4): ");
+    scanf("%d", &choice);
+
+    switch(choice) {
+        case 1:
+            circle();
+            break;
+        case 2:
+            triangle();
+            break;
+        case 3:
+            square();
+            break;
+        case 4:
+            rectangle();
+            break;
+        default:
+            printf("Invalid choice!\n");
+    }
+
+    return 0;
+}
+
+// Circle function
+void circle() {
+    float radius, area, perimeter;
+    printf("\nEnter the radius of the circle: ");
+    scanf("%f", &radius);
+    area = M_PI * radius * radius;
+    perimeter = 2 * M_PI * radius;
+    printf("Area of Circle: %.2f\n", area);
+    printf("Perimeter of Circle: %.2f\n", perimeter);
+}
+
+// Triangle function
+void triangle() {
+    float a, b, c, s, area, perimeter;
+    printf("\nEnter the sides of the triangle (a, b, c): ");
+    scanf("%f %f %f", &a, &b, &c);
+    s = (a + b + c) / 2; // semi-perimeter
+    area = sqrt(s * (s - a) * (s - b) * (s - c)); // Heron's formula
+    perimeter = a + b + c;
+    printf("Area of Triangle: %.2f\n", area);
+    printf("Perimeter of Triangle: %.2f\n", perimeter);
+}
+
+// Square function
+void square() {
+    float side, area, perimeter;
+    printf("\nEnter the side of the square: ");
+    scanf("%f", &side);
+    area = side * side;
+    perimeter = 4 * side;
+    printf("Area of Square: %.2f\n", area);
+    printf("Perimeter of Square: %.2f\n", perimeter);
+}
+
+// Rectangle function
+void rectangle() {
+    float length, width, area, perimeter;
+    printf("\nEnter the length and width of the rectangle: ");
+    scanf("%f %f", &length, &width);
+    area = length * width;
+    perimeter = 2 * (length + width);
+    printf("Area of Rectangle: %.2f\n", area);
+    printf("Perimeter of Rectangle: %.2f\n", perimeter);
+}
