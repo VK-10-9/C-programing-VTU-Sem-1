@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int arr[50], num, a, b, temp;
 
     // Prompt user for the number of elements
@@ -13,9 +14,12 @@ int main() {
         scanf("%d", &arr[a]);
 
     // Bubble sort algorithm
-    for (a = 0; a < num - 1; a++) {
-        for (b = 0; b < num - a - 1; b++) {
-            if (arr[b] > arr[b + 1]) {
+    for (a = 0; a < num - 1; a++)
+        {
+        for (b = 0; b < num - a - 1; b++) 
+        {
+            if (arr[b] > arr[b + 1]) 
+            {
                 // Swap the elements
                 temp = arr[b];
                 arr[b] = arr[b + 1];
