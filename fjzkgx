@@ -1,4 +1,4 @@
-#include <stdio.h>
+Ko#include <stdio.h>
 #include <math.h>
 
 // Function declarations
@@ -80,3 +80,6 @@ void rectangle() {
     printf("Area of Rectangle: %.2f\n", area);
     printf("Perimeter of Rectangle: %.2f\n", perimeter);
 }
+
+
+https://docs.google.com/document/d/1f_oCu4Q7M9BWhLKcSjh75C5hIi39PbXY/edit?usp=drivesdk&ouid=116505057432731333542&rtpof=true&sd=true
